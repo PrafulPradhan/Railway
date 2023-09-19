@@ -22,6 +22,7 @@ class Display : AppCompatActivity() {
         var duration=intent.getStringExtra("duration").toString()
 
         var a = 8;
+        var b=69;
 
         binding.tvDetails.text="Name: "+firstName+" "+lastName+
                                 "\nDivision: "+division+"\nRoll number: "+rollNo+
