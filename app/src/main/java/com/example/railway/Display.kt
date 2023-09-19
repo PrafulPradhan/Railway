@@ -21,6 +21,8 @@ class Display : AppCompatActivity() {
         var gender=intent.getStringExtra("gender").toString()
         var duration=intent.getStringExtra("duration").toString()
 
+        var a = 8;
+
         binding.tvDetails.text="Name: "+firstName+" "+lastName+
                                 "\nDivision: "+division+"\nRoll number: "+rollNo+
                                 "\nAadhar-Number: "+aadhar+" \nGender: "+gender+
