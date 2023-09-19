@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form">
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="105dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_vertical"
+        android:text="First Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Last Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+    <TextView
+        android:id="@+id/tvDivision"
+        android:layout_width="109dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Division"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvLastName"
+        app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Enter First Name"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/tvFirstName"
+        app:layout_constraintTop_toTopOf="@+id/tvFirstName" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Enter Last Name"
+        app:layout_constraintStart_toEndOf="@+id/tvLastName"
+        app:layout_constraintTop_toTopOf="@+id/tvLastName" />
+
+    <EditText
+        android:id="@+id/etDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="Enter Division"
+        app:layout_constraintStart_toEndOf="@+id/tvDivision"
+        app:layout_constraintTop_toTopOf="@+id/tvDivision" />
+
+    <TextView
+        android:id="@+id/tvRoll"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="Roll Number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvDivision"
+        app:layout_constraintTop_toBottomOf="@+id/tvDivision" />
+
+    <EditText
+        android:id="@+id/etRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="Enter Roll Number"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tvRoll"
+        app:layout_constraintTop_toTopOf="@+id/tvRoll" />
+
+    <TextView
+        android:id="@+id/tvAadhar"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Aadhar Number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvRoll"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoll" />
+
+    <EditText
+        android:id="@+id/etAadhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter Aadhar Number"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tvAadhar"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoll" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:text="Physically Disabled"
+        app:layout_constraintStart_toStartOf="@+id/tvTo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTo" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Gender"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvAadhar"
+        app:layout_constraintTop_toBottomOf="@+id/tvAadhar" />
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintStart_toEndOf="@+id/tvGender"
+        app:layout_constraintTop_toTopOf="@+id/tvGender">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Male  "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Female  "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioOther"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Other"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Duration"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvGender"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+    <RadioGroup
+        android:id="@+id/radioPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintStart_toEndOf="@+id/tvDuration"
+        app:layout_constraintTop_toTopOf="@+id/tvDuration">
+
+        <RadioButton
+            android:id="@+id/radioMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Monthly  "
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioQuarterly"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Quarterly  "
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="From:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvDuration"
+        app:layout_constraintTop_toBottomOf="@+id/tvDuration" />
+
+    <EditText
+        android:id="@+id/etFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="Enter Home Station"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/tvFrom"
+        app:layout_constraintTop_toTopOf="@+id/tvFrom" />
+
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="To:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvFrom"
+        app:layout_constraintTop_toBottomOf="@+id/tvFrom" />
+
+    <TextView
+        android:id="@+id/tvKurla"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:text="Kurla"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvTo"
+        app:layout_constraintTop_toTopOf="@+id/tvTo" />
+
+    <Button
+        android:id="@+id/btnSubmitForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
