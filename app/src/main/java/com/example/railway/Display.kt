@@ -39,4 +39,5 @@ class Display : AppCompatActivity() {
     }
 
     var t=9;
+    var p=0
 }
