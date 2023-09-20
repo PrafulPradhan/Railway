@@ -39,8 +39,6 @@ class Display : AppCompatActivity() {
     }
 
     var y=0
-
-
     var t=9;
     var p=0
     var g=9
