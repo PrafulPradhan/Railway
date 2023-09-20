@@ -33,4 +33,5 @@ class Display : AppCompatActivity() {
 
 
     }
+    var y=0
 }
