@@ -42,4 +42,5 @@ class Display : AppCompatActivity() {
     var t=9;
     var p=0
     var g=9
+    var h = 1;
 }
