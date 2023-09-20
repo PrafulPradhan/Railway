@@ -37,4 +37,6 @@ class Display : AppCompatActivity() {
 
 
     }
+
+    var t=9;
 }
