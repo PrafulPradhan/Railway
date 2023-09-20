@@ -21,7 +21,7 @@ class Display : AppCompatActivity() {
         var gender=intent.getStringExtra("gender").toString()
         var duration=intent.getStringExtra("duration").toString()
 
-        var a = 8
+        var a = 2
         var b=69
         var c =420
         var d=43
