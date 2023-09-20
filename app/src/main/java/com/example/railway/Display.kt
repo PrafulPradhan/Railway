@@ -26,6 +26,7 @@ class Display : AppCompatActivity() {
         var c =420
         var d=43
         var e=69
+        var f=9
 
         binding.tvDetails.text="Name: "+firstName+" "+lastName+
                                 "\nDivision: "+division+"\nRoll number: "+rollNo+
