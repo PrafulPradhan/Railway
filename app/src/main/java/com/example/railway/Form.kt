@@ -25,7 +25,6 @@ class Form : AppCompatActivity() {
 
             //performing positive action
             builder.setPositiveButton("Yes"){dialogInterface, which ->
-                
                 var firstName:String= binding.etFirstName.text.toString()
                 var lastName:String= binding.etLastName.text.toString()
                 var division:String = binding.etDiv.text.toString()
@@ -37,7 +36,6 @@ class Form : AppCompatActivity() {
                 var duration= binding.radioPass.checkedRadioButtonId
                 var durationRadioButton: RadioButton=findViewById(duration)
                 var bool= binding.switch1.isChecked
-
                 if (firstName.isEmpty()||lastName.isEmpty()||division.isEmpty()||aadhar.isEmpty()||rollNo.isEmpty()||from.isEmpty()){
                     Toast.makeText(this,"Please Fill All Fields!",Toast.LENGTH_LONG).show()
                     Toast.makeText(this,"Please Fill All Fields!",Toast.LENGTH_LONG).show()
@@ -60,6 +58,9 @@ class Form : AppCompatActivity() {
                     intent.putExtra("gender",genderRadioButton.getText())
                     intent.putExtra("duration",durationRadioButton.getText())
                     intent.putExtra("handicapped",bool)
+                    var student= Student(firstName, lastName, division, rollNo, aadhar)
+                    var db=DBManager(context = this)
+                    db.insertData(student)
                     startActivity(intent)
                 }
 
